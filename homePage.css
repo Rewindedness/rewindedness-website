@@ -110,7 +110,6 @@ nav #headNav #logo {
 nav #headNav #logo a {
   display: flex;
   justify-content: center;
-  margin: 0 0 -5px 0;
 }
 nav #headNav #logo img {
   width: 45%;
@@ -143,15 +142,33 @@ nav #headNav #contact {
   align-items: center;
   justify-content: center;
   width: 10%;
+  margin: 0 0 10px 0;
+  filter: drop-shadow(-20px 10px 0 #2778ca);
+  transition: 1.2s;
 }
 nav #headNav #contact a {
-  transition: 0.8s;
-  padding: 15px;
+  -webkit-clip-path: polygon(30% 0, 100% 0%, 100% 100%, 0% 100%);
+          clip-path: polygon(30% 0, 100% 0%, 100% 100%, 0% 100%);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serifs;
+  font-weight: bold;
+  background-color: orange;
+  color: #FFF;
+  padding: 15px 15px 15px 40px;
+  transition: 1s;
 }
 nav #headNav #contact a:hover {
-  background-color: #DFDFDF;
-  border: 4px solid #ee8c3f;
-  color: #1d1f21;
+  -webkit-clip-path: none;
+          clip-path: none;
+  background-color: #FFF;
+  color: orange;
+  padding: 15px;
+  border: 5px solid #4291e1;
+  border-radius: 5%;
+  text-shadow: 1px 1px 0.5px #181818;
+}
+nav #headNav #contact:hover {
+  filter: none;
+  margin: 0;
 }
 
 footer {

@@ -1,4 +1,4 @@
-// _main
+// _foundation
 
 body {
     display: flex;
@@ -64,7 +64,6 @@ nav {
                 display: flex;
                 justify-content: center;
                 // background-color: red;
-                margin: 0 0 -5px 0;
             }
 
             img {
@@ -104,20 +103,55 @@ nav {
             display: flex;
             align-items: center;
             justify-content: center;
-            // background-color: blue;
             width: 10%;
+            margin: 0 0 10px 0;
+            filter: drop-shadow(-20px 10px 0 #2778ca);
+            transition: 1.2s;
 
             a {
-                transition: 0.8s;
-                padding: 15px;
+                clip-path: polygon(30% 0, 100% 0%, 100% 100%, 0% 100%);
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serifs;
+                font-weight: bold;
+                background-color: orange;
+                color: #FFF;
+                padding: 15px 15px 15px 40px;
+                transition: 1s;
             }
 
             a:hover {
-                background-color: #DFDFDF;
-                border: 4px solid #ee8c3f;
-                color: #1d1f21;
+                clip-path: none;
+                background-color: #FFF;
+                color: orange;
+                padding: 15px;
+                border: 5px solid #4291e1;
+                border-radius: 5%;
+                text-shadow: 1px 1px 0.5px #181818;
             }
         }
+
+        #contact:hover {
+            filter: none;
+            margin: 0;
+        }
+
+        // #contact {
+        //     display: flex;
+        //     align-items: center;
+        //     justify-content: center;
+        //     // background-color: blue;
+        //     width: 10%;
+
+        //     a {
+        //         transition: 0.8s;
+        //         padding: 15px;
+        //     }
+
+        //     a:hover {
+        //         background-color: #DFDFDF;
+        //         border: 4px solid #ee8c3f;
+        //         color: #1d1f21;
+        //     }
+        // }
     }
 }
 
