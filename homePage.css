@@ -154,7 +154,7 @@ nav #headNav #contact a {
   background-color: orange;
   color: #FFF;
   padding: 15px 15px 15px 40px;
-  transition: 1s;
+  transition: 1.2s;
 }
 nav #headNav #contact a:hover {
   -webkit-clip-path: none;

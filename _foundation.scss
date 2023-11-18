@@ -115,11 +115,12 @@ nav {
                 background-color: orange;
                 color: #FFF;
                 padding: 15px 15px 15px 40px;
-                transition: 1s;
+                transition: 1.2s;
             }
 
             a:hover {
                 clip-path: none;
+                // polygon(0 0, 100% 0, 100% 100%, 0% 100%);
                 background-color: #FFF;
                 color: orange;
                 padding: 15px;
