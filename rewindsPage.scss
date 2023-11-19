@@ -1,0 +1,17 @@
+// _homePage
+@use '_reset';
+@use '_foundation';
+
+#rewindsContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 800;
+
+    h1 {
+        color: #1d1f21;
+        font-size: 94px;
+    }
+}
