@@ -17,7 +17,9 @@ a {
 }
 
 #topNav {
-    background-image: linear-gradient(to bottom right, #ffaf71, #ff9442);
+    // background-image: linear-gradient(to bottom right, #ffaf71, #ff9442);
+    background-image: linear-gradient(to bottom right, #ee8c3f, #ff9442);
+    // background-color: #ee8c3f;
 }
 
 nav {
@@ -36,6 +38,7 @@ nav {
         a {
             color: #1d1f21;
             transition: 0.6s;
+            font-weight: bold;
         }
 
         a:hover {
