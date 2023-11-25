@@ -91,7 +91,7 @@ nav h1 a {
   font-weight: bold;
 }
 nav h1 a:hover {
-  letter-spacing: 5px;
+  letter-spacing: 15px;
 }
 nav #headNav {
   display: flex;
@@ -105,15 +105,29 @@ nav #headNav a {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   font-size: 20px;
 }
-nav #headNav #logo {
-  width: 10%;
-}
-nav #headNav #logo a {
+nav #headNav #layers {
+  margin: 0 0 0 30%;
+  width: 100px;
+  height: 100px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  transition: 0.8s;
 }
-nav #headNav #logo img {
-  width: 45%;
+nav #headNav #layers img {
+  width: 60%;
+  box-shadow: none;
+  transition: 0.8s;
+}
+nav #headNav #layers img:nth-child(1) {
+  margin: 0 30% 0 0;
+}
+nav #headNav #layers img:nth-child(2) {
+  margin: -60% -40% 0 0;
+}
+nav #headNav #layers:hover img {
+  rotate: 540deg;
 }
 nav #headNav ul {
   display: flex;
@@ -158,8 +172,8 @@ nav #headNav #contact a {
   transition: 1.2s;
 }
 nav #headNav #contact a:hover {
-  -webkit-clip-path: none;
-          clip-path: none;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
   background-color: #FFF;
   color: orange;
   padding: 15px;
@@ -176,9 +190,12 @@ footer {
   display: flex;
   justify-content: center;
   background-image: linear-gradient(to bottom, #202223, #1d1f21);
+  background-image: linear-gradient(to bottom, #252525, #181818);
   padding: 40px;
+  margin: 2% 0 0 0;
   flex-shrink: 0;
-  border-top: 1px solid #3385d7;
+  box-shadow: 0 -5px 0 #ee8c3f;
+  border-top: 2px solid #3385d7;
 }
 footer nav {
   width: 80%;

@@ -2,6 +2,11 @@
 @use '_reset';
 @use '_foundation';
 
+$white: #DFDFDF;
+$black: #181818;
+$primary: #ee8c3f;
+$secondary: #3385d7;
+
 #homeContent {
     display: flex;
     flex-direction: column;
@@ -13,20 +18,60 @@
     h1 {
         color: #1d1f21;
         font-size: 94px;
-        // background-color: purple;
+        margin: 2%;
+    }
+
+    a {
+        color: $white;
+        font-size: 64px;
+        padding: 15px;
+        text-shadow: 2px 2px 0 $black;
+        box-shadow: -4px -4px 0 $secondary, 4px 4px 0 $secondary, -12px -12px 0 $black, 12px 12px 0 $black;
+        transition: 0.8s;
+        background-color: $primary;
+    }
+
+    a:hover {
+        box-shadow: -6px -6px 0 $black, 6px 6px 0 $black;
+    }
+
+    #promoVideo {
+        margin: 2%;
+        width: 95%;
+        height: 95%;
+    }
+
+    p {
+        width: 90%;
+        color: $white;
+        font-size: 48px;
+        font-weight: bold;
+        padding: 25px;
+        border: 8px solid $secondary;
+        background-color: #252525;
     }
 
     video {
-        position: relative;
-        display: inline;
-        z-index: 1;
+        min-width: 95%; 
+        min-height: 95%; 
+        width: auto;
+        height: auto;
+        border: 8px solid $black;
     }
 
     #carousel {
         display: flex;
-        justify-content: center;
-        padding: 10px 0;
-        width: 96%;
-        background-color: #787878;
+        // overflow-x: auto;
+        // -webkit-overflow-scrolling: touch;
+        // width: 300px;
+        // justify-content: center;
+        margin: 2% 0 5px 0;
+        border: 8px solid $black;
+        // scroll-snap-points-x: repeat(100px);
+        // scroll-snap-type: mandatory;
+    }
+
+    #carousel img {
+        margin: 0;
     }
 }
