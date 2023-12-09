@@ -1,7 +1,4 @@
 // _homePage
-@use '_reset';
-@use '_foundation';
-
 $white: #DFDFDF;
 $black: #181818;
 $primary: #ee8c3f;
@@ -57,21 +54,5 @@ $secondary: #3385d7;
         width: auto;
         height: auto;
         border: 8px solid $black;
-    }
-
-    #carousel {
-        display: flex;
-        // overflow-x: auto;
-        // -webkit-overflow-scrolling: touch;
-        // width: 300px;
-        // justify-content: center;
-        margin: 2% 0 5px 0;
-        border: 8px solid $black;
-        // scroll-snap-points-x: repeat(100px);
-        // scroll-snap-type: mandatory;
-    }
-
-    #carousel img {
-        margin: 0;
     }
 }
