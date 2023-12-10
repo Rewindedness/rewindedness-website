@@ -1,0 +1,65 @@
+// membersPage
+$white: #DFDFDF;
+$black: #181818;
+$primary: #ee8c3f;
+$secondary: #3385d7;
+
+#membersContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 800;
+
+    h1 {
+        color: #1d1f21;
+        font-size: 64px;
+        margin: 2%;
+    }
+
+    a {
+        color: $white;
+        color: $primary;
+        color: $secondary;
+        font-size: 64px;
+        padding: 15px;
+        text-shadow: 2px 2px 0 $black;
+        text-decoration: underline;
+    }
+
+    a:hover {
+        text-decoration: none;
+    }
+
+    h3 {
+        font-size: 28px;
+    }
+}
+
+#members {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    ul {
+        // background-color: #3385d7;
+
+        li {
+            // background-color: orange;
+            display: flex;
+            margin: 5% 0;
+
+            img {
+                box-shadow: 5px 5px 5px $black;
+            }
+        }
+    }
+}
+
+.memberInfo {
+    width: 100%;
+    margin: 0 5%;
+    // background-color: $primary;
+}
