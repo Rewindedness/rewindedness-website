@@ -15,7 +15,7 @@ $secondary: #3385d7;
     h1 {
         color: #1d1f21;
         font-size: 64px;
-        margin: 2%;
+        margin: 2% 0 1% 0;
     }
 }
 
@@ -26,10 +26,8 @@ $secondary: #3385d7;
     align-items: center;
 
     ul {
-        // background-color: #3385d7;
 
         li {
-            // background-color: orange;
             display: flex;
             margin: 5% 0;
 
@@ -43,25 +41,19 @@ $secondary: #3385d7;
 .memberInfo {
     width: 100%;
     margin: 0 5%;
-    // background-color: $primary;
 
     .nameEffect {
         padding: 50px 0;
         margin: 0 0 12% 0;
         background-color: $primary;
         filter: drop-shadow(20px 20px 0 #2778ca);
-        // transition: 1.2s;
-        // clip-path: polygon(30% 0, 100% 0%, 100% 100%, 0% 100%);
     }
 
     a {
         color: $white;
         font-size: 64px;
-        // padding: 15px;
         text-shadow: 1px 1px 0 $black;
-        // text-shadow: 2px 2px 0 $black;
         text-decoration: underline;
-        // clip-path: polygon(30% 0, 100% 0%, 100% 100%, 0% 100%);
     }
 
     a:hover {
