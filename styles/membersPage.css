@@ -11,21 +11,6 @@
   font-size: 64px;
   margin: 2%;
 }
-#membersContent a {
-  color: #DFDFDF;
-  color: #ee8c3f;
-  color: #3385d7;
-  font-size: 64px;
-  padding: 15px;
-  text-shadow: 2px 2px 0 #181818;
-  text-decoration: underline;
-}
-#membersContent a:hover {
-  text-decoration: none;
-}
-#membersContent h3 {
-  font-size: 28px;
-}
 
 #members {
   width: 100%;
@@ -44,4 +29,22 @@
 .memberInfo {
   width: 100%;
   margin: 0 5%;
+}
+.memberInfo .nameEffect {
+  padding: 50px 0;
+  margin: 0 0 12% 0;
+  background-color: #ee8c3f;
+  filter: drop-shadow(20px 20px 0 #2778ca);
+}
+.memberInfo a {
+  color: #DFDFDF;
+  font-size: 64px;
+  text-shadow: 1px 1px 0 #181818;
+  text-decoration: underline;
+}
+.memberInfo a:hover {
+  text-decoration: none;
+}
+.memberInfo h3 {
+  font-size: 36px;
 }/*# sourceMappingURL=membersPage.css.map */

@@ -17,24 +17,6 @@ $secondary: #3385d7;
         font-size: 64px;
         margin: 2%;
     }
-
-    a {
-        color: $white;
-        color: $primary;
-        color: $secondary;
-        font-size: 64px;
-        padding: 15px;
-        text-shadow: 2px 2px 0 $black;
-        text-decoration: underline;
-    }
-
-    a:hover {
-        text-decoration: none;
-    }
-
-    h3 {
-        font-size: 28px;
-    }
 }
 
 #members {
@@ -62,4 +44,31 @@ $secondary: #3385d7;
     width: 100%;
     margin: 0 5%;
     // background-color: $primary;
+
+    .nameEffect {
+        padding: 50px 0;
+        margin: 0 0 12% 0;
+        background-color: $primary;
+        filter: drop-shadow(20px 20px 0 #2778ca);
+        // transition: 1.2s;
+        // clip-path: polygon(30% 0, 100% 0%, 100% 100%, 0% 100%);
+    }
+
+    a {
+        color: $white;
+        font-size: 64px;
+        // padding: 15px;
+        text-shadow: 1px 1px 0 $black;
+        // text-shadow: 2px 2px 0 $black;
+        text-decoration: underline;
+        // clip-path: polygon(30% 0, 100% 0%, 100% 100%, 0% 100%);
+    }
+
+    a:hover {
+        text-decoration: none;
+    }
+
+    h3 {
+        font-size: 36px;
+    }
 }
