@@ -36,6 +36,7 @@ nav {
     h1 {
         display: flex;
         justify-content: center;
+        text-align: center;
         // font-size: 26px;
         font-size: 1.6rem;
         // padding: 10px;
@@ -208,5 +209,66 @@ footer {
 
     a {
         color: $primary;
+    }
+}
+
+input, label {
+    display: none;
+}
+
+@media screen and (max-width: 820px) {
+    #headNav {
+        flex-direction: column;
+    }
+
+    #layers {
+        pointer-events: none;
+        padding: 0 35px 0 0;
+        // background-color: red;
+    }
+
+    #nav ul li a, #contact a {
+        display: none;
+    }
+
+    #logo {
+        display: none;
+    }
+
+    label {
+        display: block;
+        
+        img {
+            width: 50%;
+        }
+    }
+
+    input:checked ~ #headNav #nav ul li a, input:checked ~ #headNav #contact a {
+        display: block;
+    }
+
+    input:checked ~ #headNav #layers {
+        padding: 0 20px 0 0;
+
+        img {
+            rotate: 540deg;
+        }
+    }
+
+    #nav {
+
+        ul {
+            flex-direction: column;
+        }
+    }
+
+    #contact {
+        filter: unset;
+        filter: drop-shadow(-20px 10px 100px red);
+
+        a {
+            clip-path: polygon(0 0, 0 0, 0 0, 0 0);
+            margin: 0 0 25px 0;
+        }
     }
 }
