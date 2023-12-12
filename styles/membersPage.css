@@ -30,12 +30,6 @@
   width: 100%;
   margin: 0 5%;
 }
-.memberInfo .nameEffect {
-  padding: 50px 0;
-  margin: 0 0 12% 0;
-  background-color: #ee8c3f;
-  filter: drop-shadow(20px 20px 0 #2778ca);
-}
 .memberInfo a {
   color: #DFDFDF;
   font-size: 64px;
@@ -47,4 +41,11 @@
 }
 .memberInfo h3 {
   font-size: 36px;
+}
+
+.nameEffect {
+  padding: 50px 0;
+  margin: 0 0 12% 0;
+  background-color: #ee8c3f;
+  filter: drop-shadow(20px 20px 0 #2778ca);
 }/*# sourceMappingURL=membersPage.css.map */

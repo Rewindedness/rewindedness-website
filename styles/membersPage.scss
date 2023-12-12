@@ -42,13 +42,6 @@ $secondary: #3385d7;
     width: 100%;
     margin: 0 5%;
 
-    .nameEffect {
-        padding: 50px 0;
-        margin: 0 0 12% 0;
-        background-color: $primary;
-        filter: drop-shadow(20px 20px 0 #2778ca);
-    }
-
     a {
         color: $white;
         font-size: 64px;
@@ -63,4 +56,11 @@ $secondary: #3385d7;
     h3 {
         font-size: 36px;
     }
+}
+
+.nameEffect {
+    padding: 50px 0;
+    margin: 0 0 12% 0;
+    background-color: $primary;
+    filter: drop-shadow(20px 20px 0 #2778ca);
 }

@@ -176,7 +176,7 @@ nav #headNav #contact a {
   font-weight: bold;
   background-color: #ee8c3f;
   color: #FFF;
-  text-shadow: 1px 1px 0 #181818;
+  text-shadow: 1px 1px 0 #1d1f21;
   padding: 15px 15px 15px 40px;
   transition: 0.8s;
 }
@@ -188,7 +188,7 @@ nav #headNav #contact a:hover {
   color: #ee8c3f;
   padding: 15px;
   border: 5px solid #4291e1;
-  text-shadow: 1px 1px 0.5px #181818;
+  text-shadow: 1px 1px 0.5px #1d1f21;
 }
 nav #headNav #contact:hover {
   filter: none;
@@ -199,7 +199,7 @@ footer {
   display: flex;
   justify-content: center;
   background-image: linear-gradient(to bottom, #202223, #1d1f21);
-  background-image: linear-gradient(to bottom, #252525, #181818);
+  background-image: linear-gradient(to bottom, #252525, #1d1f21);
   padding: 40px 0;
   margin: 2% 0 0 0;
   flex-shrink: 0;

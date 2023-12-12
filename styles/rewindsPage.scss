@@ -1,14 +1,100 @@
 // rewindsPage
+$white: #DFDFDF;
+$black: #1d1f21;
+// $black: #181818;
+$primary: #ee8c3f;
+$secondary: #3385d7;
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
 #rewindsContent {
+    width: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    // background-color: red;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 800;
 
     h1 {
-        color: #1d1f21;
-        font-size: 94px;
+        color: $black;
+        font-size: 64px;
+        margin: 1% 0 3.5% 0;
     }
+}
+
+#hook img {
+    margin: 5% 0 0 0;
+    // border: 6px solid $black;
+    // box-shadow: 8px 8px $primary;
+    box-shadow: -8px -8px 0 $secondary, 8px 8px 0 $secondary,  -12px -12px 0 $primary, 12px 12px 0 $primary, -20px -20px 0 $black, 20px 20px 0 $black;
+}
+
+#rewinds {
+    // width: 100%;
+    // flex-direction: column;
+    // align-items: center;
+
+    ul {
+        // margin: auto;
+        display: flex;
+        flex-direction: column;
+        // justify-content: space-between;
+        align-items: center;
+        // background-color: purple;
+
+        li {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            margin: 5% 0;
+            // background-color: orange;
+
+            img {
+                border: 6px solid $black;
+                box-shadow: 8px 8px $secondary;
+            }
+        }
+    }
+}
+
+.rewindInfo {
+    // width: 40%;
+    // width: 35%;
+    width: 30%;
+    // padding: 0 2%;
+    padding: 0 5%;
+    // margin: 0 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: $primary;
+    border: 6px solid $black;
+
+    a {
+        color: $black;
+        font-size: 48px;
+        // text-shadow: 1px 1px 0 $black;
+        text-decoration: underline;
+    }
+
+    a:hover {
+        text-decoration: none;
+    }
+
+    h3 {
+        color: $black;
+        font-size: 36px;
+    }
+}
+
+.nameEffect {
+    // padding: 50px 0;
+    // margin: 0 0 12% 0;
+    // background-color: $primary;
+    // filter: drop-shadow(20px 20px 0 #2778ca);
 }

@@ -1,4 +1,10 @@
+main {
+  display: flex;
+  justify-content: center;
+}
+
 #rewindsContent {
+  width: 90%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -8,5 +14,49 @@
 }
 #rewindsContent h1 {
   color: #1d1f21;
-  font-size: 94px;
+  font-size: 64px;
+  margin: 1% 0 3.5% 0;
+}
+
+#hook img {
+  margin: 5% 0 0 0;
+  box-shadow: -8px -8px 0 #3385d7, 8px 8px 0 #3385d7, -12px -12px 0 #ee8c3f, 12px 12px 0 #ee8c3f, -20px -20px 0 #1d1f21, 20px 20px 0 #1d1f21;
+}
+
+#rewinds ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#rewinds ul li {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin: 5% 0;
+}
+#rewinds ul li img {
+  border: 6px solid #1d1f21;
+  box-shadow: 8px 8px #3385d7;
+}
+
+.rewindInfo {
+  width: 30%;
+  padding: 0 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: #ee8c3f;
+  border: 6px solid #1d1f21;
+}
+.rewindInfo a {
+  color: #1d1f21;
+  font-size: 48px;
+  text-decoration: underline;
+}
+.rewindInfo a:hover {
+  text-decoration: none;
+}
+.rewindInfo h3 {
+  color: #1d1f21;
+  font-size: 36px;
 }/*# sourceMappingURL=rewindsPage.css.map */
