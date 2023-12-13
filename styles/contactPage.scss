@@ -8,15 +8,22 @@ $secondary: #3385d7;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    // text-align: center;
-    font-size: 28px;
+    text-align: center;
+    font-size: 16px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    // font-weight: 800;
+    font-weight: 800;
     // background-image: url(../images/Rewindedness\ Logo.svg);
     // background-repeat: no-repeat;
     // background-position: center;
     // background-size: 500px;
+    margin: 0 0 5% 0;
+
+    h1 {
+        width: 65%;
+        color: #1d1f21;
+        font-size: 48px;
+        margin: 3% 0 3% 0;
+    }
 
     form {
         display: flex;
@@ -25,20 +32,21 @@ $secondary: #3385d7;
         margin: 1% 0 0 0;
     }
 
-    label, input {
-        display: block;
-    }
+    // label, input {
+    //     display: block;
+    // }
 
     label {
+        display: none;
         width: 80%;
         margin: 0 0 2% 0;
     }
 
     input {
+        display: block;
         width: 80%;
-        font-size: 18px;
+        // font-size: 18px;
         margin: 0 0 4% 0;
-        // padding: 8px;
     }
 
     textarea {
@@ -74,9 +82,48 @@ $secondary: #3385d7;
     button:hover {
         box-shadow: -4px -4px 0 $black, 4px 4px 0 $black;
     }
+}
+
+#contactSpace {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#icon {
+    margin: 2.5%;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 10px solid #181818;
+    box-shadow: 6px 6px #ee8c3f, 14px 14px #181818;
+    box-shadow: 10px 10px #ee8c3f, 20px 20px #181818;
+    cursor: pointer;
+    transition: 0.8s;
 
     img {
-        width: 35%;
-        display: none;
+        width: 30%;
+        box-shadow: none;
+        transition: 0.8s;
+    }
+
+    img:nth-child(1) {
+        margin: 0 20% 0 0;
+    }
+
+    img:nth-child(2) {
+        margin: -30% -20% 0 0;
+    }
+}
+
+#icon:hover {
+    box-shadow: 6px 6px #ee8c3f, 12px 12px #181818;
+
+    img {
+        rotate: 540deg;
     }
 }

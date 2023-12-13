@@ -47,25 +47,32 @@
     </header>
 
     <main id="contactContent">
-        <img src="images/Rewindedness Logo.svg" alt="">
+        <h1>Shoot us a message and we'll rewind with you shortly</h1>
 
-        <form action="#" method="get">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name">
+        <div id="contactSpace">
+            <div id="icon">
+                <img src="images/logoleft.svg" alt="">
+                <img src="images/logoright.svg" alt="">
+            </div>
 
-            <label for="email">Email</label>
-            <input type="text" id="email" name="email">
+            <form action="#" method="get">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="your name here">
 
-            <label for="subject">Subject</label>
-            <input type="text" id="subject" name="subject">
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" placeholder="example@email.com">
 
-            <label for="message">Type your message here</label>
-            <!-- <input type="text" id="message" name="message"> -->
-            <textarea name="message" id="" cols="30" rows="5"></textarea>
+                <!-- <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" placeholder="topic"> -->
 
-            <!-- <input type="submit" value="Submit"> -->
-            <button value="Send Email" onclick="sendEmail(event)">SUBMIT</button>
-        </form>
+                <label for="message">Type your message here</label>
+                <!-- <input type="text" id="message" name="message"> -->
+                <textarea name="message" id="" cols="30" rows="5" placeholder="Type your message here"></textarea>
+
+                <!-- <input type="submit" value="Submit"> -->
+                <button value="Send Email" onclick="sendEmail(event)">SUBMIT</button>
+            </form>
+        </div>
     </main>
 
     <footer>
