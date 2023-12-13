@@ -20,7 +20,7 @@ main {
 
 #hook img {
   margin: 7% 0 5% 0;
-  box-shadow: -8px -8px 0 #3385d7, 8px 8px 0 #3385d7, -12px -12px 0 #ee8c3f, 12px 12px 0 #ee8c3f, -20px -20px 0 #1d1f21, 20px 20px 0 #1d1f21;
+  box-shadow: -6px -6px 0 #ee8c3f, 6px 6px 0 #ee8c3f, -14px -14px 0 #1d1f21, 14px 14px 0 #1d1f21;
 }
 
 #rewinds ul {
