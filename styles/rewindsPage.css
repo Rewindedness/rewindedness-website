@@ -19,8 +19,9 @@ main {
 }
 
 #hook img {
+  width: 70%;
   margin: 7% 0 5% 0;
-  box-shadow: -6px -6px 0 #ee8c3f, 6px 6px 0 #ee8c3f, -14px -14px 0 #1d1f21, 14px 14px 0 #1d1f21;
+  box-shadow: -6px -6px 0 #3385d7, 6px 6px 0 #3385d7, -14px -14px 0 #1d1f21, 14px 14px 0 #1d1f21;
 }
 
 #rewinds ul {

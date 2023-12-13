@@ -28,10 +28,11 @@ main {
 }
 
 #hook img {
+    width: 70%;
     margin: 7% 0 5% 0;
     // border: 6px solid $black;
     // box-shadow: 8px 8px $primary;
-    box-shadow:  -6px -6px 0 $primary, 6px 6px 0 $primary, -14px -14px 0 $black, 14px 14px 0 $black;
+    box-shadow:  -6px -6px 0 $secondary, 6px 6px 0 $secondary, -14px -14px 0 $black, 14px 14px 0 $black;
 }
 
 #rewinds {
