@@ -11,7 +11,7 @@ main {
 }
 
 #rewindsContent {
-    width: 90%;
+    width: 75%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -28,7 +28,7 @@ main {
 }
 
 #hook img {
-    margin: 5% 0 0 0;
+    margin: 7% 0 5% 0;
     // border: 6px solid $black;
     // box-shadow: 8px 8px $primary;
     box-shadow: -8px -8px 0 $secondary, 8px 8px 0 $secondary,  -12px -12px 0 $primary, 12px 12px 0 $primary, -20px -20px 0 $black, 20px 20px 0 $black;
@@ -51,12 +51,12 @@ main {
             width: 100%;
             display: flex;
             justify-content: space-around;
-            margin: 5% 0;
+            margin: 4% 0;
             // background-color: orange;
 
             img {
                 border: 6px solid $black;
-                box-shadow: 8px 8px $secondary;
+                box-shadow: -8px 8px $black;
             }
         }
     }
@@ -71,11 +71,13 @@ main {
     // margin: 0 5%;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    background-color: $primary;
-    border: 6px solid $black;
+    justify-content: center;
+    // background-color: $primary;
+    // border: 6px solid $black;
 
     a {
+        display: block;
+        margin: 0 0 10% 0;
         color: $black;
         font-size: 48px;
         // text-shadow: 1px 1px 0 $black;
@@ -98,3 +100,26 @@ main {
     // background-color: $primary;
     // filter: drop-shadow(20px 20px 0 #2778ca);
 }
+
+.movingElement {
+    width: 15%;
+    position: sticky;
+    top: 0%;
+    // position: absolute;
+    // top: 50%;
+    // left: 50%;
+    // transform: translate(-50%, -50%);
+    // opacity: 0.5;
+    // animation: moveDown 10s ease forwards;
+}
+
+// @keyframes moveDown {
+//     from {
+//         top: 50%;
+//         opacity: 0.5;
+//     }
+//     to {
+//         top: 100%; // Adjust the final position as needed
+//         opacity: 1;
+//     }
+// }

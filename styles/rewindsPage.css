@@ -4,7 +4,7 @@ main {
 }
 
 #rewindsContent {
-  width: 90%;
+  width: 75%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -19,7 +19,7 @@ main {
 }
 
 #hook img {
-  margin: 5% 0 0 0;
+  margin: 7% 0 5% 0;
   box-shadow: -8px -8px 0 #3385d7, 8px 8px 0 #3385d7, -12px -12px 0 #ee8c3f, 12px 12px 0 #ee8c3f, -20px -20px 0 #1d1f21, 20px 20px 0 #1d1f21;
 }
 
@@ -32,11 +32,11 @@ main {
   width: 100%;
   display: flex;
   justify-content: space-around;
-  margin: 5% 0;
+  margin: 4% 0;
 }
 #rewinds ul li img {
   border: 6px solid #1d1f21;
-  box-shadow: 8px 8px #3385d7;
+  box-shadow: -8px 8px #1d1f21;
 }
 
 .rewindInfo {
@@ -44,11 +44,11 @@ main {
   padding: 0 5%;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  background-color: #ee8c3f;
-  border: 6px solid #1d1f21;
+  justify-content: center;
 }
 .rewindInfo a {
+  display: block;
+  margin: 0 0 10% 0;
   color: #1d1f21;
   font-size: 48px;
   text-decoration: underline;
@@ -59,4 +59,10 @@ main {
 .rewindInfo h3 {
   color: #1d1f21;
   font-size: 36px;
+}
+
+.movingElement {
+  width: 15%;
+  position: sticky;
+  top: 0%;
 }/*# sourceMappingURL=rewindsPage.css.map */
