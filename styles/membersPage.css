@@ -23,7 +23,8 @@
   margin: 5% 0;
 }
 #members ul li img {
-  box-shadow: 5px 5px 5px #181818;
+  border: 6px solid #181818;
+  box-shadow: -8px 8px #181818;
 }
 
 .memberInfo {
@@ -33,7 +34,7 @@
 .memberInfo a {
   color: #DFDFDF;
   font-size: 64px;
-  text-shadow: 1px 1px 0 #181818;
+  text-shadow: 3px 3px 0 #181818;
   text-decoration: underline;
 }
 .memberInfo a:hover {

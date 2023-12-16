@@ -9,25 +9,55 @@
     <link rel="stylesheet" href="styles/rewindsPage.css">
     <title>Projects of Rewindedness</title>
 
-    <!-- <script>
+    <script>
         document.addEventListener("DOMContentLoaded", function() {
-            const movingElement = document.querySelector(".moving-element");
+            const topButton = document.getElementById("topButton");
 
-            window.addEventListener("scroll", function() {
-                const scrollPosition = window.scrollY;
-
-                // Adjust the scroll position trigger and final position as needed
-                if (scrollPosition > 100) {
-                    movingElement.style.top = "80%";
-                    movingElement.style.opacity = 1;
-                } else {
-                    movingElement.style.top = "50%";
-                    movingElement.style.opacity = 0.5;
-                }
+            topButton.addEventListener("click", function() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth"
+                });
             });
         });
-    </script> -->
+
+        // const movingElement = document.querySelector(".scrollElement");
+
+        // window.addEventListener("scrollElement", function() {
+        //     const scrollPosition = window.scrollY;
+
+        //     if (scrollPosition > 100) {
+        //         movingElement.style.top = "80%";
+        //         movingElement.style.opacity = 1;
+        //         movingElement.style.margin = 0;
+        //     } else {
+        //         movingElement.style.top = "50%";
+        //         movingElement.style.opacity = 0.5;
+        //         movingElement.style.margin = "100px 0 0 0";
+        //     }
+        // });
+
+        document.addEventListener('scroll', function() {
+            var scrollElement = document.querySelector('.scrollElement');
+            var scrollPosition = window.scrollY;
+
+            // Adjust the top position based on the scroll position
+            scrollElement.style.top = scrollPosition + 'px';
+
+            while (scrollPosition > 100) {
+                scrollElement.style.top = 0;
+            }
+        });
+    </script>
 </head>
+
+<style>
+
+    main {
+        margin: calc();
+    }
+
+</style>
 
 <body>
     <header>
@@ -67,9 +97,10 @@
     </header>
 
     <main>
+        <!-- <div id="scroll">
+            <button id="topButton"><img src="images/logoleft.svg" alt=""></button>
+        </div> -->
         <div id="rewindsContent">
-            <!-- <h1>Rewinds!</h1> -->
-
             <div id="rewinds">
                 <!-- <img class="movingElement" src="images/Rewindedness Logo.svg" alt=""> -->
 
@@ -122,35 +153,40 @@
                         </div>
                     </li>
                     <li>
-                        <img src="https://unsplash.it/622/350?image=50" alt="">
+                        <!-- <img src="https://unsplash.it/622/350?image=50" alt=""> -->
+                        <img src="images/projectImage5.png" alt="">
                         <div class="rewindInfo">
                             <a href=""><h2>Instrument of Nature</h2></a>
                             <h3>February 2025</h3>
                         </div>
                     </li>
                     <li>
-                        <img src="https://unsplash.it/622/350?image=40" alt="">
+                        <!-- <img src="https://unsplash.it/622/350?image=40" alt=""> -->
+                        <img src="images/projectImage6.png" alt="">
                         <div class="rewindInfo">
                             <a href=""><h2>Jacket Off, Glasses On</h2></a>
                             <h3>March 2025</h3>
                         </div>
                     </li>
                     <li>
-                        <img src="https://unsplash.it/622/350?image=30" alt="">
+                        <!-- <img src="https://unsplash.it/622/350?image=30" alt=""> -->
+                        <img src="images/projectImage7.png" alt="">
                         <div class="rewindInfo">
                             <a href=""><h2>Realm of Fire</h2></a>
                             <h3>April 2025</h3>
                         </div>
                     </li>
                     <li>
-                        <img src="https://unsplash.it/622/350?image=20" alt="">
+                        <!-- <img src="https://unsplash.it/622/350?image=20" alt=""> -->
+                        <img src="images/projectImage8.png" alt="">
                         <div class="rewindInfo">
                             <a href=""><h2>Realm of Water</h2></a>
                             <h3>April 2025</h3>
                         </div>
                     </li>
                     <li>
-                        <img src="https://unsplash.it/622/350?image=10" alt="">
+                        <!-- <img src="https://unsplash.it/622/350?image=10" alt=""> -->
+                        <img src="images/projectImage9.png" alt="">
                         <div class="rewindInfo">
                             <a href=""><h2>ANOTHER HIP BEAT</h2></a>
                             <h3>May 2025</h3>
@@ -158,6 +194,10 @@
                     </li>
                 </ul>
             </div>
+        </div>
+        <div id="scroll">
+            <button id="topButton" class="scrollElement"><img src="images/logoleft.svg" alt=""></button>
+            <img src="images/logoright.svg" alt="">
         </div>
     </main>
 

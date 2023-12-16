@@ -32,7 +32,8 @@ $secondary: #3385d7;
             margin: 5% 0;
 
             img {
-                box-shadow: 5px 5px 5px $black;
+                border: 6px solid $black;
+                box-shadow: -8px 8px $black;
             }
         }
     }
@@ -45,7 +46,7 @@ $secondary: #3385d7;
     a {
         color: $white;
         font-size: 64px;
-        text-shadow: 1px 1px 0 $black;
+        text-shadow: 3px 3px 0 $black;
         text-decoration: underline;
     }
 
