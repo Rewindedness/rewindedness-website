@@ -101,11 +101,13 @@ $secondary: #3385d7;
                 
                 a:link {
                     color: $secondary;
-                    text-shadow: 1px 1px 1px #000;
+                    text-shadow: 1px 1px 0 #000;
+                    text-decoration: underline;
                 }
 
                 a:hover {
-                    text-shadow: 0 0 0 #000;
+                    // text-shadow: 0 0 0 #000;
+                    text-decoration: none;
                 }
             }
 
@@ -150,8 +152,8 @@ $secondary: #3385d7;
                 width: auto;
                 height: auto;
                 border: 8px solid #252525;
-                background-image: url(../images/Thumbnail_1.4.1.jpg);
-                background-size: cover;
+                // background-image: linear-gradient(to bottom right, $primary, $secondary, #252525);
+                background-image: linear-gradient(to bottom, $primary, $secondary, $primary, $secondary, $primary, $primary, $primary, $secondary, $primary, $secondary, $primary, $secondary, $primary, $secondary, $primary, $secondary, $primary, $secondary, $primary, $secondary, $secondary, $primary, $secondary, $primary, $secondary, $secondary, $secondary, $secondary, $primary, $secondary, $primary, $secondary, $primary, $secondary);
                 cursor: pointer;
             }
         }
@@ -186,7 +188,7 @@ $secondary: #3385d7;
             h2 {
                 // width: 75%;
                 // width: 100%;
-                font-size: 38px;
+                // font-size: 38px;
                 font-size: 34px;
                 line-height: 42px;
             }
@@ -194,15 +196,104 @@ $secondary: #3385d7;
             ul {
                 margin: 1%;
                 // width: 60%;
-                width: 90%;
+                // width: 90%;
+                width: 80%;
                 @include flexCenter;
     
                 li {
+                    text-align: left;
                     margin: 1%;
                     font-size: 28px;
                     list-style-type: square;
                 }
             }
+        }
+    }
+
+    #support {
+        @include flexCenter;
+
+        h1 {
+            font-size: 54px;
+        }
+
+        div {
+            width: 75%;
+            color: $white;
+            background-color: #252525;
+            @include flexCenter;
+
+            color: $white;
+            padding: 40px;
+            border: 12px solid $secondary;
+            border-radius: 80px;
+            box-shadow: 0 0 10px #252525;
+
+            h2 {
+                width: 82%;
+                font-size: 34px;
+                line-height: 42px;
+            }
+    
+            ul {
+                margin: 1%;
+                width: 90%;
+    
+                li {
+                    margin: 1%;
+                    font-size: 28px;
+                    text-align: left;
+                    line-height: 38px;
+                    list-style-type: square;
+                }
+            }
+        }
+    }
+
+    #contact {
+        width: 100%;
+        margin: 3%;
+        @include flexCenter;
+
+        h1 {
+            font-size: 54px;
+            margin: 0;
+        }
+
+        p {
+            width: 40%;
+            font-size: 28px;
+            line-height: 32px;
+            margin: 1%;
+
+            a {
+                color: $secondary;
+                text-shadow: 1px 1px 0 #000;
+                text-decoration: underline;
+                transition: 0.6s;
+            }
+
+            a:hover {
+                // text-shadow: 0 0 0 #000;
+                text-decoration: none;
+            }
+        }
+
+        #email {
+            font-size: 32px;
+            padding: 16px;
+            color: $white;
+            background-color: #252525;
+            border: 6px solid $primary;
+            box-shadow: 4px 4px 6px #252525;
+            // border-radius: 20px;
+            transition: 0.6s;
+        }
+
+        #email:hover {
+            box-shadow: 2px 2px 4px #252525;
+            background-color: $primary;
+            color: $black;
         }
     }
 
