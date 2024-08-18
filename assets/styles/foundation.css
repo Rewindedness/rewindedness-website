@@ -227,11 +227,11 @@ footer a:hover {
   width: 100%;
 }
 #socials li {
-  filter: drop-shadow(5px 5px 0 #ee8c3f) drop-shadow(-5px -5px 0 #3385d7);
+  filter: drop-shadow(2px 2px 0 #3385d7) drop-shadow(-2px -2px 0 #3385d7);
   transition: 0.6s;
 }
 #socials li:hover {
-  filter: drop-shadow(2px 2px 0 #3385d7) drop-shadow(-2px -2px 0 #3385d7);
+  transform: scale(120%);
 }
 
 #copyright {

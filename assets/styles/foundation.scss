@@ -222,12 +222,14 @@ footer {
     width: 100%;
 
     li {
-        filter: drop-shadow(5px 5px 0 $primary) drop-shadow(-5px -5px 0 $secondary);
+        // filter: drop-shadow(5px 5px 0 $primary) drop-shadow(-5px -5px 0 $secondary);
+        filter: drop-shadow(2px 2px 0 $secondary) drop-shadow(-2px -2px 0 $secondary);
         transition: 0.6s;
     }
 
     li:hover {
-        filter: drop-shadow(2px 2px 0 $secondary) drop-shadow(-2px -2px 0 $secondary);
+        // filter: drop-shadow(2px 2px 0 $secondary) drop-shadow(-2px -2px 0 $secondary);
+        transform: scale(120%);
     }
 }
 

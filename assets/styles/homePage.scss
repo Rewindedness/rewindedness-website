@@ -20,6 +20,7 @@ $secondary: #3385d7;
 
     h1 {
         color: #1d1f21;
+        color: #252525;
         font-size: 74px;
         margin: 2%;
     }
@@ -67,6 +68,7 @@ $secondary: #3385d7;
             width: 100%;
             @include flexCenter;
             // background-color: green;
+            color: #252525;
 
             img {
                 width: 50%;
@@ -136,26 +138,43 @@ $secondary: #3385d7;
         width: 100%;
         @include flexCenter;
         // background-color: red;
+        color: #252525;
 
         h1, h2 {
             font-size: 54px;
         }
 
+        h1 {
+            
+            span {
+                font-style: italic;
+                text-decoration: underline;
+            }
+        }
+
         #promoVideo {
             margin: 2%;
-            width: 90%;
-            height: 90%;
+            width: 70%;
+            height: 70%;
+            // width: 1200px;
+            // height: 675px;
+            // background-color: red;
 
-            video {
-                min-width: 90%; 
-                min-height: 90%; 
-                width: auto;
-                height: auto;
-                border: 8px solid #252525;
-                // background-image: linear-gradient(to bottom right, $primary, $secondary, #252525);
-                background-image: linear-gradient(to bottom, $primary, $secondary, $primary, $secondary, $primary, $primary, $primary, $secondary, $primary, $secondary, $primary, $secondary, $primary, $secondary, $primary, $secondary, $primary, $secondary, $primary, $secondary, $secondary, $primary, $secondary, $primary, $secondary, $secondary, $secondary, $secondary, $primary, $secondary, $primary, $secondary, $primary, $secondary);
-                cursor: pointer;
+            iframe {
+                // width: 100%;
+                box-shadow: 0 0 20px #000;
             }
+
+            // video {
+            //     min-width: 90%; 
+            //     min-height: 90%; 
+            //     width: auto;
+            //     height: auto;
+            //     border: 8px solid #252525;
+            //     // background-image: linear-gradient(to bottom right, $primary, $secondary, #252525);
+            //     // background-image: linear-gradient(to bottom, $primary, $secondary, $primary, $secondary, $primary, $primary, $primary, $secondary, $primary, $secondary, $primary, $secondary, $primary, $secondary, $primary, $secondary, $primary, $secondary, $primary, $secondary, $secondary, $primary, $secondary, $primary, $secondary, $secondary, $secondary, $secondary, $primary, $secondary, $primary, $secondary, $primary, $secondary);
+            //     cursor: pointer;
+            // }
         }
 
         p {
@@ -205,6 +224,10 @@ $secondary: #3385d7;
                     margin: 1%;
                     font-size: 28px;
                     list-style-type: square;
+
+                    span {
+                        font-style: italic
+                    }
                 }
             }
         }
@@ -261,6 +284,7 @@ $secondary: #3385d7;
         }
 
         p {
+            color: #252525;
             width: 40%;
             font-size: 28px;
             line-height: 32px;

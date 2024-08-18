@@ -8,6 +8,7 @@
 }
 #homeContent h1 {
   color: #1d1f21;
+  color: #252525;
   font-size: 74px;
   margin: 2%;
 }
@@ -37,6 +38,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: #252525;
 }
 #homeContent #bios .bioCard img {
   width: 50%;
@@ -90,23 +92,22 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: #252525;
 }
 #homeContent #demo h1, #homeContent #demo h2 {
   font-size: 54px;
 }
+#homeContent #demo h1 span {
+  font-style: italic;
+  text-decoration: underline;
+}
 #homeContent #demo #promoVideo {
   margin: 2%;
-  width: 90%;
-  height: 90%;
+  width: 70%;
+  height: 70%;
 }
-#homeContent #demo #promoVideo video {
-  min-width: 90%;
-  min-height: 90%;
-  width: auto;
-  height: auto;
-  border: 8px solid #252525;
-  background-image: linear-gradient(to bottom, #ee8c3f, #3385d7, #ee8c3f, #3385d7, #ee8c3f, #ee8c3f, #ee8c3f, #3385d7, #ee8c3f, #3385d7, #ee8c3f, #3385d7, #ee8c3f, #3385d7, #ee8c3f, #3385d7, #ee8c3f, #3385d7, #ee8c3f, #3385d7, #3385d7, #ee8c3f, #3385d7, #ee8c3f, #3385d7, #3385d7, #3385d7, #3385d7, #ee8c3f, #3385d7, #ee8c3f, #3385d7, #ee8c3f, #3385d7);
-  cursor: pointer;
+#homeContent #demo #promoVideo iframe {
+  box-shadow: 0 0 20px #000;
 }
 #homeContent #demo p {
   width: 80%;
@@ -149,6 +150,9 @@
   margin: 1%;
   font-size: 28px;
   list-style-type: square;
+}
+#homeContent #goals div ul li span {
+  font-style: italic;
 }
 #homeContent #support {
   display: flex;
@@ -199,6 +203,7 @@
   margin: 0;
 }
 #homeContent #contact p {
+  color: #252525;
   width: 40%;
   font-size: 28px;
   line-height: 32px;
